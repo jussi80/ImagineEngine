@@ -163,12 +163,10 @@ public final class Label: SceneObject, InstanceHashable, ActionPerformer, Plugga
         }
 
         let objCString = NSString(string: text)
-
         let rect = objCString.boundingRect(with: .zero,
                                            options: [.usesLineFragmentOrigin],
                                            attributes: [.font: font],
                                            context: nil)
-
         size = rect.size
     }
 
